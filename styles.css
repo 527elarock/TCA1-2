@@ -4,10 +4,9 @@ html{
 
 
 
-
 .spiderweb{
     background: #fff;
-    width: 7px;
+    width: 2px;
     height: 200px;
     margin-left: 49px;
 }
@@ -130,5 +129,25 @@ html{
 
     50%{
         transform: translateY(-20px);
+    }
+}
+
+
+.spider .eye {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    animation: blink 6s infinite;
+}
+
+@keyframes blink {
+    45% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(0.1);
+    }
+
+    55% {
+        transform: scaleY(1);
     }
 }
